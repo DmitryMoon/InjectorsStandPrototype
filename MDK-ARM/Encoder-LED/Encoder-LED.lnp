@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"encoder-led\startup_stm32f103xb.o"
+"encoder-led\main.o"
+"encoder-led\gpio.o"
+"encoder-led\tim.o"
+"encoder-led\stm32f1xx_it.o"
+"encoder-led\stm32f1xx_hal_msp.o"
+"encoder-led\stm32f1xx_hal_gpio_ex.o"
+"encoder-led\stm32f1xx_hal_tim.o"
+"encoder-led\stm32f1xx_hal_tim_ex.o"
+"encoder-led\stm32f1xx_hal.o"
+"encoder-led\stm32f1xx_hal_rcc.o"
+"encoder-led\stm32f1xx_hal_rcc_ex.o"
+"encoder-led\stm32f1xx_hal_gpio.o"
+"encoder-led\stm32f1xx_hal_dma.o"
+"encoder-led\stm32f1xx_hal_cortex.o"
+"encoder-led\stm32f1xx_hal_pwr.o"
+"encoder-led\stm32f1xx_hal_flash.o"
+"encoder-led\stm32f1xx_hal_flash_ex.o"
+"encoder-led\stm32f1xx_hal_exti.o"
+"encoder-led\system_stm32f1xx.o"
+"encoder-led\encoder.o"
+--strict --scatter "Encoder-LED\Encoder-LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Encoder-LED.map" -o Encoder-LED\Encoder-LED.axf
